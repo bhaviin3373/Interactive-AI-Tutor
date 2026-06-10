@@ -1,0 +1,6 @@
+{
+  "name": "Interactive AI Tutor",
+  "description": "An AI-powered assistant that helps students learn directly within an LMS, providing course-specific Q&A, chapter assistance, and quizzes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
