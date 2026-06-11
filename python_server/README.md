@@ -59,3 +59,31 @@ This folder contains a complete Python backend built with **FastAPI** that exact
 ## Python vs Node.js Notes
 - The AI Studio web preview uses Node.js, so any code running directly in the browser preview here uses the Node.js `server.ts`. 
 - When you export the project, you can safely delete `server.ts` and rely entirely on `python_server/main.py`. Change `package.json` scripts if you no longer want the Node backend.
+
+
+## Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/bhaviin3373/Interactive-AI-Tutor.git
+cd Interactive-AI-Tutor
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+4. Run the application:
+
+```bash
+python app.py
+```
