@@ -7,7 +7,7 @@
     "dev": "tsx server.ts",
     "build": "vite build && esbuild server.ts --bundle --platform=node --format=esm --packages=external --sourcemap --outfile=dist/server.js",
     "start": "node dist/server.js",
-    "clean": "rm -rf dist server.js",
+    "clean": "node -e \"const fs = require('fs'); ['dist', 'server.js', 'dist/server.js', 'dist/server.cjs'].forEach(p => fs.existsSync(p) && fs.rmSync(p, { recursive: true, force: true }))\"",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
