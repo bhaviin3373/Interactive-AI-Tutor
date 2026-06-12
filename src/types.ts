@@ -14,6 +14,12 @@ export interface Course {
   pdfData?: string;
   flashcards?: Flashcard[];
   progress?: StudentProgress;
+  metadata?: {
+    author?: string;
+    numPages?: number;
+    wordCount?: number;
+    keyTerms?: { word: string; definition: string }[];
+  };
 }
 
 export interface Flashcard {
@@ -26,6 +32,17 @@ export interface Chapter {
   id: string;
   title: string;
   content?: string;
+}
+
+export interface Annotation {
+  id: string;
+  chapterId: string;
+  text: string;
+  start: number;
+  end: number;
+  color: 'yellow' | 'green' | 'pink' | 'blue';
+  note?: string;
+  createdAt: number;
 }
 
 export interface Message {
@@ -50,4 +67,7 @@ export interface StudentProgress {
   strongAreas: string[];
   recentQuizScores: Record<string, number>;
   performanceHistory: { date: string; score: number }[];
+  totalActiveTime?: number;
+  readingTime?: number;
+  chattingTime?: number;
 }
