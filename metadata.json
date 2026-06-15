@@ -1,6 +1,6 @@
 {
-  "name": "Interactive AI Tutor",
-  "description": "An AI-powered assistant that helps students learn directly within an LMS, providing course-specific Q&A, chapter assistance, and quizzes.",
+  "name": "EduAI",
+  "description": "EduAI is an intelligent AI-powered study companion that splits uploaded course syllabi/PDFs into structured modules with instant Q&As, vocabulary cards, and progress metrics.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

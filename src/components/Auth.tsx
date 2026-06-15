@@ -44,7 +44,7 @@ export function Auth({ onLogin, isDarkMode }: { onLogin: (user: UserProfile) => 
             {isRegister ? 'Create an Account' : 'Welcome Back'}
           </h2>
           <p className="text-sm text-center text-slate-500 dark:text-slate-400 mb-8">
-            {isRegister ? 'Join EduFlow AI to start learning' : 'Sign in to continue your progress'}
+            {isRegister ? 'Join EduAI to start learning' : 'Sign in to continue your progress'}
           </p>
 
           {errorMsg && (

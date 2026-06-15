@@ -14,6 +14,7 @@ export interface Course {
   pdfData?: string;
   flashcards?: Flashcard[];
   progress?: StudentProgress;
+  uploadedAt?: number;
   metadata?: {
     author?: string;
     numPages?: number;
@@ -71,3 +72,17 @@ export interface StudentProgress {
   readingTime?: number;
   chattingTime?: number;
 }
+
+export interface SyncMetric {
+  id: string;
+  userId: string;
+  email: string;
+  courseId: string;
+  courseTitle: string;
+  timestamp: number;
+  metricType: 'study_time' | 'quiz_score' | 'reading_goal' | 'progress_update';
+  value: any;
+  status: 'pending' | 'syncing' | 'failed';
+  error?: string;
+}
+
